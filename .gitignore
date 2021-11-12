@@ -43,3 +43,5 @@ fastlane/test_output
 iOSInjectionProject/
 
 .DS_Store
+
+chatApp/Assets.xcassets/img1.imageset
