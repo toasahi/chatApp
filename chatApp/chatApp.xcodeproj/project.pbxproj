@@ -11,6 +11,8 @@
 		CA372092273E857B00F1AC60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA372091273E857B00F1AC60 /* ContentView.swift */; };
 		CA372094273E857B00F1AC60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA372093273E857B00F1AC60 /* Assets.xcassets */; };
 		CA372097273E857B00F1AC60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA372096273E857B00F1AC60 /* Preview Assets.xcassets */; };
+		CA37209E273E898600F1AC60 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37209D273E898600F1AC60 /* ChatRow.swift */; };
+		CA3720A0273E8C3B00F1AC60 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37209F273E8C3B00F1AC60 /* ChatModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		CA372091273E857B00F1AC60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CA372093273E857B00F1AC60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA372096273E857B00F1AC60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA37209D273E898600F1AC60 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
+		CA37209F273E8C3B00F1AC60 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				CA37208F273E857B00F1AC60 /* chatAppApp.swift */,
 				CA372091273E857B00F1AC60 /* ContentView.swift */,
+				CA37209F273E8C3B00F1AC60 /* ChatModel.swift */,
+				CA37209D273E898600F1AC60 /* ChatRow.swift */,
 				CA372093273E857B00F1AC60 /* Assets.xcassets */,
 				CA372095273E857B00F1AC60 /* Preview Content */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA372092273E857B00F1AC60 /* ContentView.swift in Sources */,
+				CA37209E273E898600F1AC60 /* ChatRow.swift in Sources */,
 				CA372090273E857B00F1AC60 /* chatAppApp.swift in Sources */,
+				CA3720A0273E8C3B00F1AC60 /* ChatModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,8 +8,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView{
+            List{
+                ForEach(0..<10){ index in
+                    ChatRow()
+                }
+            }
+            .listStyle(PlainListStyle())
+            .navigationTitle("トーク")
+            .navigationBarItems(trailing:Button(action:{}){
+                Image(systemName: "square.and.pencil")
+            })
+        }
     }
 }
 
