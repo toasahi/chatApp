@@ -10,8 +10,8 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             List{
-                ForEach(0..<10){ index in
-//                    ChatRow(chat: Chat)
+                ForEach(Chat.sampleChat){ chat in
+                    ChatRow(chat: chat)
                 }
             }
             .listStyle(PlainListStyle())

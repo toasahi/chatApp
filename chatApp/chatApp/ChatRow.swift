@@ -44,6 +44,6 @@ struct ChatRow: View {
 
 struct ChatRow_Previews: PreviewProvider {
     static var previews: some View {
-        ChatRow(chat: Chat.sampleChat[1])
+        ChatRow(chat: Chat.sampleChat[0])
     }
 }

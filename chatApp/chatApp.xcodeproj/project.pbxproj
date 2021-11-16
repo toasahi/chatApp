@@ -14,6 +14,8 @@
 		CA37209E273E898600F1AC60 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37209D273E898600F1AC60 /* ChatRow.swift */; };
 		CA3720A0273E8C3B00F1AC60 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37209F273E8C3B00F1AC60 /* ChatModel.swift */; };
 		CA39A1E727433CEF00D3ECA2 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39A1E627433CEF00D3ECA2 /* DateHelper.swift */; };
+		CA39A1E927434FE800D3ECA2 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39A1E827434FE800D3ECA2 /* ChatView.swift */; };
+		CA39A1EB2743500100D3ECA2 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39A1EA2743500100D3ECA2 /* ChatViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		CA37209D273E898600F1AC60 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
 		CA37209F273E8C3B00F1AC60 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		CA39A1E627433CEF00D3ECA2 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		CA39A1E827434FE800D3ECA2 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		CA39A1EA2743500100D3ECA2 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 			children = (
 				CA37208F273E857B00F1AC60 /* chatAppApp.swift */,
 				CA372091273E857B00F1AC60 /* ContentView.swift */,
+				CA39A1E827434FE800D3ECA2 /* ChatView.swift */,
+				CA39A1EA2743500100D3ECA2 /* ChatViewModel.swift */,
 				CA37209F273E8C3B00F1AC60 /* ChatModel.swift */,
 				CA37209D273E898600F1AC60 /* ChatRow.swift */,
 				CA39A1E627433CEF00D3ECA2 /* DateHelper.swift */,
@@ -147,9 +153,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA39A1E727433CEF00D3ECA2 /* DateHelper.swift in Sources */,
+				CA39A1EB2743500100D3ECA2 /* ChatViewModel.swift in Sources */,
 				CA372092273E857B00F1AC60 /* ContentView.swift in Sources */,
 				CA37209E273E898600F1AC60 /* ChatRow.swift in Sources */,
 				CA372090273E857B00F1AC60 /* chatAppApp.swift in Sources */,
+				CA39A1E927434FE800D3ECA2 /* ChatView.swift in Sources */,
 				CA3720A0273E8C3B00F1AC60 /* ChatModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
