@@ -13,6 +13,7 @@
 		CA372097273E857B00F1AC60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA372096273E857B00F1AC60 /* Preview Assets.xcassets */; };
 		CA37209E273E898600F1AC60 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37209D273E898600F1AC60 /* ChatRow.swift */; };
 		CA3720A0273E8C3B00F1AC60 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37209F273E8C3B00F1AC60 /* ChatModel.swift */; };
+		CA39A1E727433CEF00D3ECA2 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39A1E627433CEF00D3ECA2 /* DateHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		CA372096273E857B00F1AC60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA37209D273E898600F1AC60 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
 		CA37209F273E8C3B00F1AC60 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		CA39A1E627433CEF00D3ECA2 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				CA372091273E857B00F1AC60 /* ContentView.swift */,
 				CA37209F273E8C3B00F1AC60 /* ChatModel.swift */,
 				CA37209D273E898600F1AC60 /* ChatRow.swift */,
+				CA39A1E627433CEF00D3ECA2 /* DateHelper.swift */,
 				CA372093273E857B00F1AC60 /* Assets.xcassets */,
 				CA372095273E857B00F1AC60 /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA39A1E727433CEF00D3ECA2 /* DateHelper.swift in Sources */,
 				CA372092273E857B00F1AC60 /* ContentView.swift in Sources */,
 				CA37209E273E898600F1AC60 /* ChatRow.swift in Sources */,
 				CA372090273E857B00F1AC60 /* chatAppApp.swift in Sources */,

@@ -7,9 +7,12 @@
 import SwiftUI
 
 struct ChatRow: View {
+    
+    let chat:Chat
+    
     var body: some View {
         HStack(spacing:20){
-            Image("img1")
+            Image(chat.person.imgString)
                 .resizable()
                 .frame(width: 70, height: 70)
                 .clipShape(Circle())
@@ -17,15 +20,15 @@ struct ChatRow: View {
             ZStack{
                 VStack(alignment: .leading, spacing: 5){
                     HStack{
-                        Text("Ito Marika")
+                        Text(chat.person.name)
                             .bold()
-                        
+
                         Spacer()
                         
-                        Text("2020/11/12")
+                        Text(chat.message.last?.date.descriptionString() ?? "")
                     }
                     VStack{
-                        Text("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+                        Text(chat.message.last?.text ?? "")
                             .foregroundColor(Color.gray)
                             .lineLimit(2)
                             .frame(height:50,alignment: .top)
@@ -41,6 +44,6 @@ struct ChatRow: View {
 
 struct ChatRow_Previews: PreviewProvider {
     static var previews: some View {
-        ChatRow()
+        ChatRow(chat: Chat.sampleChat[1])
     }
 }

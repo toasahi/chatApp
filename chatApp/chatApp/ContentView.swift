@@ -11,7 +11,7 @@ struct ContentView: View {
         NavigationView{
             List{
                 ForEach(0..<10){ index in
-                    ChatRow()
+//                    ChatRow(chat: Chat)
                 }
             }
             .listStyle(PlainListStyle())
