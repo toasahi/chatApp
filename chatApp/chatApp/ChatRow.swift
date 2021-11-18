@@ -15,6 +15,7 @@ struct ChatRow: View {
             Image(chat.person.imgString)
                 .resizable()
                 .frame(width: 70, height: 70)
+                .scaledToFit()
                 .clipShape(Circle())
             
             ZStack{
@@ -27,7 +28,7 @@ struct ChatRow: View {
                         
                         Text(chat.message.last?.date.descriptionString() ?? "")
                     }
-                    VStack{
+                    HStack{
                         Text(chat.message.last?.text ?? "")
                             .foregroundColor(Color.gray)
                             .lineLimit(2)
@@ -36,6 +37,11 @@ struct ChatRow: View {
                             .padding(.trailing,40)
                     }
                 }
+                
+                Circle()
+                    .foregroundColor(chat.hasUnread ? .blue : .clear)
+                    .frame(width:18,height: 18)
+                    .frame(maxWidth:.infinity,alignment: .trailing)
             }
         }
         .frame(height: 80)

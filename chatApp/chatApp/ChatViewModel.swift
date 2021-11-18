@@ -10,9 +10,11 @@ import Foundation
 class ChatViewModel:ObservableObject{
     @Published var chats = Chat.sampleChat
     
+    //seachbarの検索
     func getSortedFilterChats(query:String)->[Chat]{
-        //$0は最初と$1は2番目のプレスホルダー
+        //日付で並び替え
         let sortedChats = chats.sorted{
+            //$0は最初と$1は2番目のプレスホルダー
             guard let date1 = $0.message.last?.date else { return false}
             guard let date2 = $1.message.last?.date else{ return false}
             return date1 > date2
@@ -21,7 +23,7 @@ class ChatViewModel:ObservableObject{
             return sortedChats
         }
         
-        //並べ替え
+        //queryで検索
         return sortedChats.filter{$0.person.name.lowercased().contains(query.lowercased())}
     }
 }
