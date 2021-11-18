@@ -2,7 +2,6 @@
 //  DateHelper.swift
 //  chatApp
 //
-//  Created by 戸田麻陽 on 2021/11/16.
 //
 
 import Foundation
