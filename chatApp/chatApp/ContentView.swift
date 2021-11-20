@@ -16,7 +16,32 @@ struct ContentView: View {
         NavigationView{
             List{
                 ForEach(viewModel.getSortedFilterChats(query: query)){ chat in
-                    ChatRow(chat: chat)
+                    ZStack{
+                        ChatRow(chat: chat)
+                        NavigationLink(destination:{
+                            ChatView(chat: chat)
+                                .environmentObject(viewModel)
+                        }){
+                           EmptyView()
+                        }
+                        .buttonStyle(PlainButtonStyle())
+                        .frame(width:0)
+                        .opacity(0)
+                    }
+                    .swipeActions(edge:.leading,allowsFullSwipe: true){
+                        Button(action:{
+                            viewModel.markAsUnread(!chat.hasUnread, chat: chat)
+                        }){
+                            if chat.hasUnread{
+                                Label("Read",systemImage: "text.bubble")
+                            }else{
+                                Label("Unread",systemImage: "circle.fill")
+                            }
+                        }
+                        .tint(.blue)
+                    }
+                    
+                    
         }
             }
             .listStyle(PlainListStyle())
